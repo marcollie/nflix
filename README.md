@@ -18,3 +18,4 @@ Learning React and ES6 building a Movie Discovery App.
 - [x] Airing Today (TV)
 - [x] TV Show Detail
 - [x] Movie Detail
+- [x] Search (TV, Movie)
