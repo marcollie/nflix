@@ -1,8 +1,6 @@
 import React from "react";
 import HomePresenter from "./HomePresenter";
 import { moviesApi } from "api";
-import now from "performance-now";
-
 
 export default class extends React.Component {
     state = {
@@ -15,12 +13,12 @@ export default class extends React.Component {
 
     async componentDidMount() {
         try{
-            const nowPlaying = await moviesApi.nowPlaying();
+           const nowPlaying = await moviesApi.nowPlaying();
             console.log(nowPlaying);
         } catch {
             this.setState({
                 error: "Can't find movies information."
-            })
+            });
         } finally {
             this.setState({
                 loading:false
