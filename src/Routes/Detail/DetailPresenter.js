@@ -62,12 +62,22 @@ const Divider = styled.span`
     margin: 0 10px;
 `;
 
+
 const Overview = styled.p`
     font-size: 12px;
     opacity: 0.7;
     line-height: 1.5;
     width: 50%;
+    margin-bottom: 20px;
 `;
+
+// const Company = styled.div`
+//     position: absolute;
+//     width: 40%;
+//     height: 40%;
+//     background-color: black;
+//     opacity: 0.5;
+// `;
 
 const DetailPresenter = ({ result, loading, error }) => (
     loading ? (
