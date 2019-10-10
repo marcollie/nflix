@@ -45,7 +45,6 @@ const Cover = styled.div`
 const Data = styled.div`
     width: 70%;
     margin-left: 10px;
-    border: 1px solid black;
 `;
 
 const Title = styled.h1`
