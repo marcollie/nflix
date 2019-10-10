@@ -26,7 +26,7 @@
     "extends": "react-app"
   },
 
-  "homepage": "https://marcollie.github.io/nfilx",
+  "homepage": "https://nervous-joliot-65aa61.netlify.com",
   "browserslist": {
     "production": [
       ">0.2%",
