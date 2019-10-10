@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/nfilx/static/js/main.cd2c3cc9.chunk.js",
-    "main.js.map": "/nfilx/static/js/main.cd2c3cc9.chunk.js.map",
+    "main.js": "/nfilx/static/js/main.b9f4b4f9.chunk.js",
+    "main.js.map": "/nfilx/static/js/main.b9f4b4f9.chunk.js.map",
     "runtime-main.js": "/nfilx/static/js/runtime-main.0ab116ee.js",
     "runtime-main.js.map": "/nfilx/static/js/runtime-main.0ab116ee.js.map",
-    "static/js/2.3d60fb3b.chunk.js": "/nfilx/static/js/2.3d60fb3b.chunk.js",
-    "static/js/2.3d60fb3b.chunk.js.map": "/nfilx/static/js/2.3d60fb3b.chunk.js.map",
+    "static/js/2.7c829c6d.chunk.js": "/nfilx/static/js/2.7c829c6d.chunk.js",
+    "static/js/2.7c829c6d.chunk.js.map": "/nfilx/static/js/2.7c829c6d.chunk.js.map",
     "index.html": "/nfilx/index.html",
-    "precache-manifest.2a64030767392520f25dc8f45eba5c5c.js": "/nfilx/precache-manifest.2a64030767392520f25dc8f45eba5c5c.js",
+    "precache-manifest.9bc1448f7701a02ec2d7da2374affb7e.js": "/nfilx/precache-manifest.9bc1448f7701a02ec2d7da2374affb7e.js",
     "service-worker.js": "/nfilx/service-worker.js",
     "static/media/imdbLogo.svg": "/nfilx/static/media/imdbLogo.ed2fcc33.svg",
     "static/media/noPosterSmall.png": "/nfilx/static/media/noPosterSmall.87a0eb6a.png"
