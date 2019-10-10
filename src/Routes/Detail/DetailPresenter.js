@@ -45,6 +45,7 @@ const Cover = styled.div`
 const Data = styled.div`
     width: 70%;
     margin-left: 10px;
+    border: 1px solid black;
 `;
 
 const Title = styled.h1`
@@ -56,12 +57,21 @@ const ItemContainer = styled.div`
     margin: 20px 0;
 `;
 
-const Item = styled.span``;
+const Item = styled.span`
+
+`;
 
 const Divider = styled.span`
     margin: 0 10px;
 `;
 
+const Imdb = styled.span`
+    display: inline-block;
+    width: 28px;
+    height: 13px;
+    background-image: url(${props => props.bgImage});
+    background-size: cover;
+`;
 
 const Overview = styled.p`
     font-size: 12px;
@@ -71,13 +81,13 @@ const Overview = styled.p`
     margin-bottom: 20px;
 `;
 
-// const Company = styled.div`
-//     position: absolute;
-//     width: 40%;
-//     height: 40%;
-//     background-color: black;
-//     opacity: 0.5;
-// `;
+const Company = styled.div`
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-color: black;
+    opacity: 0.5;
+`;
 
 const DetailPresenter = ({ result, loading, error }) => (
     loading ? (
@@ -120,8 +130,13 @@ const DetailPresenter = ({ result, loading, error }) => (
                                 : `${genre.name} / `
                             )}
                         </Item>
+                        <Divider>•</Divider>
+                        <Item>
+                            <Imdb bgImage={result.imdb_id ? `https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/375px-IMDB_Logo_2016.svg.png` : require("../../assets/imdbLogo.svg")} onClick="http://parkDex.tistory.com"/>
+                        </Item>
                     </ItemContainer>
                     <Overview>{result.overview}</Overview>
+                    <Company></Company>
                 </Data>
                 </Content>
             </Container>
