@@ -72,6 +72,8 @@ const Imdb = styled.span`
     background-size: cover;
 `;
 
+const Anchor = Imdb.withComponent("a");
+
 const Overview = styled.p`
     font-size: 12px;
     opacity: 0.7;
@@ -131,7 +133,16 @@ const DetailPresenter = ({ result, loading, error }) => (
                         </Item>
                         <Divider>•</Divider>
                         <Item>
-                            <Imdb bgImage={result.imdb_id ? `https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/375px-IMDB_Logo_2016.svg.png` : require("../../assets/imdbLogo.svg")} onClick="http://parkDex.tistory.com"/>
+                            <Imdb bgImage={result.imdb_id ? `https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/375px-IMDB_Logo_2016.svg.png` : require("../../assets/imdbLogo.svg")}
+                            >
+                                <Anchor 
+                                href={`https://www.imdb.com/title/${result.imdb_id}`}
+                                target="_black"
+                                >
+
+                                </Anchor>
+                            </Imdb>
+                            
                         </Item>
                     </ItemContainer>
                     <Overview>{result.overview}</Overview>
